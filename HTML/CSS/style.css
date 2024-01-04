@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+h1{
+    background-color: blue;
+}
+
+nav > ul > li{
+    display: inline;
+    margin-right: 15px;
+}
+
+nav  li >a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}

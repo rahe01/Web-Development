@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        fieldset{
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+            <nav>
+                <ul>
+                    <li><a href="audio.html">Video</a></li>
+                    <li>
+                        <a href="form.html">Form</a>
+                        <ul class="dropdown">
+                            <li><a href="audio.html">Video</a></li>
+                            <li><a href="form.html">Form</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="table.html">Table</a></li>
+                        </ul>
+                    
+                    
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="table.html">Table</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+
+    <main>
+        <section>
+            <h2>Please fill up this form</h2>
+            <form action="">
+                <label for="name"> Your Name: 
+                    <input id="name"  type="text" placeholder="Your name">
+                </label>
+                <label for="email"> Your Email
+                    <input type="email" name="" id="email" placeholder="email">
+                </label>
+
+                <label for="phone">
+                    Your Phone:
+                    <input type="text" placeholder="Phone" id="phone">
+                </label>
+
+
+                <fieldset>
+                    <legend>Pick one pitha</legend>
+                    <label for="citoy">
+                        <input type="radio" name="pitha" id="citoy">
+                        Chitoy
+                    </label>
+
+                    <label for="vapa">
+                        <input type="radio" name="pitha" id="vapa">Vapa
+                    </label>
+
+                    <label for="puri">
+                        <input type="radio" name="pitha" id="puri">Puri
+                    </label>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Pick one or more Vorta</legend>
+                    <label for="sorisa">
+                        <input type="checkbox" name="vorta" id="sorisa"> Sorisa
+                    </label>
+
+                    <label for="shutki">
+                        <input type="checkbox" name="vorta" id="shutki">Shutki
+                    </label>
+
+                    <label for="chili">
+                        <input type="checkbox" name="vorta" id="chili">Chili
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special Instruction</legend>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
