@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: rgb(199, 38, 205);
+            --secondary-color: purple;
+            --font-size: 30px;
+        }
+        h1{
+            color: var(--primary-color);
+        
+        }
+
+        .box{
+            border: 2px solid var(--primary-color);
+            width: calc(100% - 500px);
+        }
+        .sidebar{
+            background-color: cadetblue;
+        }
+        .maincontent{
+            background-color: yellowgreen;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>My coustom property</h1>
+    <h4>Also commonly known as css variables</h4>
+
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo commodi veritatis quasi laboriosam delectus consequatur, distinctio vitae quaerat perspiciatis dolorum. Cupiditate velit itaque aperiam, fuga doloremque magnam veniam voluptatum.</p>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            side bar
+        </div>
+        <div class="maincontent">
+            main content
+        </div>
+    </div>
+</body>
+</html>
