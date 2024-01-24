@@ -34,7 +34,8 @@
                     colors: {
                         clifford: '#da373d',
                         'legal-btn': '#B68C5A',
-                        'head-color': '#414040'
+                        'head-color': '#414040',
+                        'box-color': '#F3F3F3'
                     }
                 }
             }
@@ -389,53 +390,63 @@
         <div class="my-14">
 
             <h1 class="text-4xl font-extrabold font-heading text-center">Contact With Us</h1>
-           <p class="font-paragraph font-bold py-5 lg:px-48 text-center">
-            Contact With Us for personalized assistance and expert support. We're here to address your inquiries and provide the assistance you need.</p>
+            <p class="font-paragraph font-bold py-5 lg:px-48 text-center">
+                Contact With Us for personalized assistance and expert support. We're here to address your inquiries and
+                provide the assistance you need.</p>
 
             <!-- parent  div-->
-            <div class="flex ">
+            <div class="flex flex-col lg:flex-row gap-8 ">
 
-            <!-- left div -->
-            <div class="grid grid-cols-2 flex-1">
+                <!-- left div -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-0 ">
 
-                <div class="h-60 flex flex-col items-center justify-center">
-                    <div class="flex items-center justify-center"><img src="images/address.png" alt="" class=""></div>
-                    <h2 class="font-heading font-extrabold text-base text-center">Address</h2>
-                    <p class="font-paragraph text-xs text-center">A108 Adam Street, <br>
-                        New York, NY 535022</p>
+                    <div
+                        class=" flex flex-col items-center justify-center lg:border-b-2 lg:border-r-2 border-gray-300  bg-box-color h-auto lg:h-64 w-auto lg:w-64 ">
+                        <div class="flex items-center justify-center"><img src="images/address.png" alt="" class="">
+                        </div>
+                        <h2 class="font-heading font-extrabold text-base text-center">Address</h2>
+                        <p class="font-paragraph text-xs text-center">A108 Adam Street, <br>
+                            New York, NY 535022</p>
+                    </div>
+                    <div
+                        class=" flex flex-col items-center justify-center lg:border-b-2 border-gray-300 bg-box-color h-auto lg:h-64 w-auto lg:w-64">
+                        <div class="flex justify-center items-center"><img src="images/call.png" alt="" class=""></div>
+                        <h2 class="font-heading font-extrabold text-base text-center">Call Us</h2>
+                        <p class="font-paragraph text-xs text-center">+88 01750 00 00 00 <br>
+                            +88 01750 00 00 00</p>
+                    </div>
+                    <div
+                        class="h-60 flex flex-col items-center justify-center lg:border-r-2 border-gray-300 bg-box-color h-auto lg:h-64 w-auto lg:w-64 space-x-0">
+                        <div class="flex items-center justify-center"><img src="images/email.png" alt="" class=""></div>
+                        <h2 class="font-heading font-extrabold text-base text-center">Email Us</h2>
+                        <p class="font-paragraph text-xs text-center">info@gmail.com <br>
+                            info@gmail.com</p>
+                    </div>
+                    <div
+                        class="h-60 flex flex-col items-center justify-center bg-box-color h-auto lg:h-64 w-auto lg:w-64 ">
+                        <div class="flex items-center justify-center"><img src="images/time.png" alt="" class=""></div>
+                        <h2 class="font-heading font-extrabold text-base text-center">Working Hours</h2>
+                        <p class="font-paragraph text-xs text-center">Mon-Fri: 9AM to 5PM <br>
+                            Sunday: 9AM to 1 PM</p>
+                    </div>
+
                 </div>
-                <div class="h-60 flex flex-col items-center justify-center">
-                    <div class="flex justify-center items-center"><img src="images/call.png" alt="" class=""></div>
-                    <h2 class="font-heading font-extrabold text-base text-center">Call Us</h2>
-                    <p class="font-paragraph text-xs text-center">+88 01750 00 00 00 <br>
-                        +88 01750 00 00 00</p>
+
+                <!-- right div -->
+                <div class="flex-1   ">
+
+                    <div class="flex flex-col space-y-7 ">
+                        <input type="text" placeholder="Your Name" class="input input-bordered input-success  w-full border-none bg-box-color" />
+                        <input type="email" placeholder="Your Email"
+                            class="input input-bordered input-success w-full border-none bg-box-color " />
+                        <input type="text" placeholder="Subject" class="input input-bordered input-success w-full border-none bg-box-color " />
+                        <textarea class="textarea textarea-bordered border-none bg-box-color h-auto lg:h-52" placeholder="Your Message"></textarea>
+                        <div class="navbar-end">
+                            <button class="btn btn-wide bg-legal-btn text-white w-full ">Send Message</button>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="h-60 flex flex-col items-center justify-center">
-                    <div class="flex items-center justify-center"><img src="images/email.png" alt="" class=""></div>
-                    <h2 class="font-heading font-extrabold text-base text-center">Email Us</h2>
-                    <p class="font-paragraph text-xs text-center">info@gmail.com <br>
-                        info@gmail.com</p>
-                </div>
-                <div class="h-60 flex flex-col items-center justify-center">
-                    <div class="flex items-center justify-center"><img src="images/time.png" alt="" class=""></div>
-                    <h2 class="font-heading font-extrabold text-base text-center">Working Hours</h2>
-                    <p class="font-paragraph text-xs text-center">Mon-Fri: 9AM to 5PM <br>
-                        Sunday: 9AM to 1 PM</p>
-                </div>
-
-            </div>
-
-            <!-- right div -->
-            <div class="flex-1">
-
-              <div class="flex flex-col">
-                <input type="text" placeholder="Your Name" class="input input-bordered input-success w-full max-w-xs" />
-                <input type="email" placeholder="Your Email" class="input input-bordered input-success w-full max-w-xs" />
-                <input type="text" placeholder="Subject" class="input input-bordered input-success w-full max-w-xs" />
-                <textarea class="textarea textarea-bordered" placeholder="Your Message"></textarea>
-              </div>
-
-            </div>
 
 
 
@@ -450,6 +461,33 @@
 
 
     </main>
+
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <aside>
+          <img src="images/logo2.png" alt="">
+          <p>There are many variations of passages <br> of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+        </aside> 
+        <nav>
+          <header class="footer-title">Usefull Link</header> 
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Cases</a>
+          <a class="link link-hover">Blog</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
 
 
 </body>
