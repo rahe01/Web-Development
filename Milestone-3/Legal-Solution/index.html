@@ -393,30 +393,30 @@
             Contact With Us for personalized assistance and expert support. We're here to address your inquiries and provide the assistance you need.</p>
 
             <!-- parent  div-->
-            <div>
+            <div class="flex ">
 
             <!-- left div -->
-            <div class="grid grid-cols-2">
+            <div class="grid grid-cols-2 flex-1">
 
-                <div>
+                <div class="h-60 flex flex-col items-center justify-center">
                     <div class="flex items-center justify-center"><img src="images/address.png" alt="" class=""></div>
                     <h2 class="font-heading font-extrabold text-base text-center">Address</h2>
                     <p class="font-paragraph text-xs text-center">A108 Adam Street, <br>
                         New York, NY 535022</p>
                 </div>
-                <div>
+                <div class="h-60 flex flex-col items-center justify-center">
                     <div class="flex justify-center items-center"><img src="images/call.png" alt="" class=""></div>
                     <h2 class="font-heading font-extrabold text-base text-center">Call Us</h2>
                     <p class="font-paragraph text-xs text-center">+88 01750 00 00 00 <br>
                         +88 01750 00 00 00</p>
                 </div>
-                <div>
+                <div class="h-60 flex flex-col items-center justify-center">
                     <div class="flex items-center justify-center"><img src="images/email.png" alt="" class=""></div>
                     <h2 class="font-heading font-extrabold text-base text-center">Email Us</h2>
                     <p class="font-paragraph text-xs text-center">info@gmail.com <br>
                         info@gmail.com</p>
                 </div>
-                <div>
+                <div class="h-60 flex flex-col items-center justify-center">
                     <div class="flex items-center justify-center"><img src="images/time.png" alt="" class=""></div>
                     <h2 class="font-heading font-extrabold text-base text-center">Working Hours</h2>
                     <p class="font-paragraph text-xs text-center">Mon-Fri: 9AM to 5PM <br>
@@ -426,7 +426,14 @@
             </div>
 
             <!-- right div -->
-            <div>
+            <div class="flex-1">
+
+              <div class="flex flex-col">
+                <input type="text" placeholder="Your Name" class="input input-bordered input-success w-full max-w-xs" />
+                <input type="email" placeholder="Your Email" class="input input-bordered input-success w-full max-w-xs" />
+                <input type="text" placeholder="Subject" class="input input-bordered input-success w-full max-w-xs" />
+                <textarea class="textarea textarea-bordered" placeholder="Your Message"></textarea>
+              </div>
 
             </div>
 
