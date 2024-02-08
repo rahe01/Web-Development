@@ -1,3 +1,3 @@
-const s= "sdjkfhsdjf";
+const a = {num: [ 1 , 2 , 3 ]} ;
 
-console.log(typeof s);
+console.log(typeof a);

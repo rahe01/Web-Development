@@ -1,14 +1,24 @@
-function matchString(s1,s2){
+// Problem-02: Good Name , Bad Name
+function checkName(name) {
+  if (typeof name !== "string") {
+    return "invalid";
+  }
 
+  let nameLow = name.toLowerCase();
 
-    const result= s1.includes(s2);
-    if(typeof (s1&&s2) !== 'string'){
+  const last = nameLow.charAt(nameLow.length - 1);
 
-        return "nter vailid information";
-    }
-    return result;
+  if (
+    last === "a" ||
+    last === "y" ||
+    last === "i" ||
+    last === "e" ||
+    last === "o" ||
+    last === "u" ||
+    last === "w"
+  ) {
+    return "Good Name";
+  }
 
-
+  return "Bad name";
 }
-
-console.log(matchString("Rahe ahmed adf",7))
