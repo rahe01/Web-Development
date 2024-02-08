@@ -22,3 +22,4 @@ function checkName(name) {
 
   return "Bad name";
 }
+console.log(checkName())
