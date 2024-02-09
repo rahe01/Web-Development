@@ -22,4 +22,4 @@ function checkName(name) {
 
   return "Bad name";
 }
-console.log(checkName())
+console.log(checkName("fffo"))
