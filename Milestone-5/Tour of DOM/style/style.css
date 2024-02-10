@@ -1,0 +1,15 @@
+h1 {
+    color: lightcoral;
+}
+li{
+    color: blueviolet;
+}
+
+#fruits-title{
+    color: chartreuse;
+}
+
+.yellow-bg{
+    background-color: yellow !important;
+}
+
