@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="btn-h1">This is default heading</h1>
+    <input type="text" id="deleat-txt" placeholder="Please Enter 'deleat' here"> 
+    <button id="deleat-btn" disabled>Deleat</button>
+</body>
+
+<script>
+
+    const btnH1 = document.getElementById('btn-h1');
+    const deleatTxt = document.getElementById('deleat-txt');
+    const deleatBtn = document.getElementById('deleat-btn');
+
+    deleatTxt.addEventListener('keyup', function(event){
+        const text = event.target.value;
+        if(text ==='deleat'){
+            deleatBtn.removeAttribute('disabled');
+        }
+        else{
+            deleatBtn.setAttribute('disabled',true)
+        }
+    })
+
+    deleatBtn.addEventListener('click',function(){
+        btnH1.style.display = 'none';
+    })
+
+
+
+</script>
+
+</html>

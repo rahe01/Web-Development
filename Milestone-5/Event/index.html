@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM events</title>
+</head>
+<body>
+    <h1 onclick="console.log('Hi')">DOM er ajke event</h1>
+    <button onclick="console.log(7)">Click Me</button>
+    <button onclick="console.log(76)">Another button</button>
+    <br>
+    <button onclick="document.body.style.backgroundColor = 'yellow'">Make Yellow</button>
+    <button onclick="makeRed()">Make Red</button>
+    <button id="make-blue">Make blue</button>   
+    <button id="make-purple">Purple</button>  
+    <button id="make-pink">MAke pink</button>  
+    <button id="make-green">Make Green</button>
+    <button id="make-gold">Make golden road</button>
+
+
+
+
+    <script src="JS/event.js"></script>
+    <script>
+   document.getElementById('make-gold').addEventListener('click',function(){document.body.style.backgroundColor= 'goldenrod'})
+
+    </script>
+</body>
+</html>

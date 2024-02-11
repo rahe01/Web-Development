@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM summary</title>
+</head>
+<body>
+    <h1>Final dom event handelars</h1>
+    <h3 id="handle-status">Default header</h3>
+    <p id="input-p">Default input text</p>
+    <input type="text" name="" id="input-field">
+    <button id="btn-update">Update</button>
+    <br> <br>
+    <button onclick="handeOnclick()">Add onclick function</button>
+    <button id="event-listener">Envent litcheaner</button>
+
+
+
+    <script>
+        function handeOnclick(){
+            const handleStatus = document.getElementById('handle-status');
+            handleStatus.innerText = 'Handle by function'
+        }
+
+        document.getElementById('event-listener').addEventListener('click', function(){
+            const handleStatus = document.getElementById('handle-status');
+            handleStatus.innerText = 'Text changed by listener'
+        })
+
+        document.getElementById('btn-update').addEventListener('click', function(){
+            const inputFiled = document.getElementById('input-field');
+
+            const inputText = inputFiled.value;
+            const inputP = document.getElementById('input-p');
+            inputP.innerText = inputText;
+            inputFiled.value = '';
+        })
+    </script>
+</body>
+</html>

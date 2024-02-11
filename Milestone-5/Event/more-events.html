@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Explore more events</h1>
+    <button id="btn-more">Events</button>
+
+    <textarea name="" id="text-filed" cols="30" rows="10"></textarea>
+
+
+    <script>
+
+   //     document.getElementById('text-filed').addEventListener('focus',function(){
+  //          console.log("trigger")
+   //     })
+   //     document.getElementById('text-filed').addEventListener('blur',function(){
+   //         console.log("trigger bbbbbbbbb")
+  //      })
+      document.getElementById('text-filed').addEventListener('keyup',function(){
+         console.log(event.target.value)
+       })
+
+
+        document.getElementById('btn-more').addEventListener('mousemove', function(){
+            console.log("treger")
+        })  
+    
+    </script>
+</body>
+</html>
