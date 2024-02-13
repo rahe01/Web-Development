@@ -56,10 +56,10 @@
 
                         <div class="flex ">
                         
-                                <input type="text" placeholder="b" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
+                                <input id="triangleBaseInput"  type="text" placeholder="b" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
                             
                            
-                                <input type="text" placeholder="h" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
+                                <input id="triangleHeightInput" type="text" placeholder="h" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
                           
                         </div>
 
@@ -68,7 +68,7 @@
 
 
                       <div class="card-actions">
-                        <button class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
+                        <button id="triangleBtn" onclick="triangleArea()" class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -237,6 +237,7 @@
 
 
 
+    <script src="JS/triangle-area.js"></script>
 
 
 
