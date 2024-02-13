@@ -63,7 +63,7 @@
                           
                         </div>
 
-                        <div class="flex"><pre>Area is: </pre><span> </span> <span> cm<sup>2</sup></span> </div>
+                        <div class="flex"><pre>Area is: </pre><span id="triangleSpan" >0</span><pre> cm<sup>2</sup></pre> </div>
 
 
 
@@ -84,19 +84,18 @@
 
                         <div class="flex ">
                         
-                                <input type="text" placeholder="W" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
+                                <input id="rectangleWidth" type="text" placeholder="W" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
                             
                            
-                                <input type="text" placeholder="I" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
+                                <input id="rectangleLength" type="text" placeholder="I" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
                           
                         </div>
 
-                        <div class="flex"><pre>Area is: </pre><span> </span> <span> cm<sup>2</sup></span> </div>
-
+                        <div class="flex"><pre>Area is: </pre><span id="rectangleSpan" >0</span><pre> cm<sup>2</sup></pre> </div>
 
 
                       <div class="card-actions">
-                        <button class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
+                        <button onclick="rectangleArea()" class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -112,19 +111,20 @@
 
                         <div class="flex ">
                         
-                                <input type="text" placeholder="b" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
+                                <input id="paraBase" type="text" placeholder="b" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
                             
                            
-                                <input type="text" placeholder="h" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
+                                <input id="paraHeight" type="text" placeholder="h" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
                           
                         </div>
 
-                        <div class="flex"><pre>Area is: </pre><span> </span> <span> cm<sup>2</sup></span> </div>
+                       
+                        <div class="flex"><pre>Area is: </pre><span id="paraSpan" >0</span><pre> cm<sup>2</sup></pre> </div>
 
 
 
                       <div class="card-actions">
-                        <button class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
+                        <button onclick="paraArea()" class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -141,19 +141,17 @@
 
                         <div class="flex ">
                         
-                                <input type="text" placeholder="d1" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
+                                <input id="rhombusD1" type="text" placeholder="d1" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
                             
                            
-                                <input type="text" placeholder="d2" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
+                                <input id="rhombusD2" type="text" placeholder="d2" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
                           
                         </div>
 
-                        <div class="flex"><pre>Area is: </pre><span> </span> <span> cm<sup>2</sup></span> </div>
-
-
+                        <div class="flex"><pre>Area is: </pre><span id="rhombusSpan" >0</span><pre> cm<sup>2</sup></pre> </div>
 
                       <div class="card-actions">
-                        <button class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
+                        <button onclick="rhombusArea()" class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -169,19 +167,18 @@
 
                         <div class="flex ">
                         
-                                <input type="text" placeholder="p" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
+                                <input id="pentagonP" type="text" placeholder="p" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
                             
                            
-                                <input type="text" placeholder="b" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
+                                <input id="pentagonB" type="text" placeholder="b" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
                           
                         </div>
 
-                        <div class="flex"><pre>Area is: </pre><span> </span> <span> cm<sup>2</sup></span> </div>
-
+                        <div class="flex"><pre>Area is: </pre><span id="pentagonSpan" >0</span><pre> cm<sup>2</sup></pre> </div>
 
 
                       <div class="card-actions">
-                        <button class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
+                        <button onclick="pentagonArea ()" class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -197,19 +194,18 @@
 
                         <div class="flex ">
                         
-                                <input type="text" placeholder="a" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
+                                <input id="ellipsA" type="text" placeholder="a" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span class="pr-2">cm</span>
                             
                            
-                                <input type="text" placeholder="b" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
+                                <input id="ellipsB" type="text" placeholder="b" class="w-14 mr-2 bg-slate-200 py-1 px-2 rounded-md"> <span>cm</span>
                           
                         </div>
 
-                        <div class="flex"><pre>Area is: </pre><span> </span> <span> cm<sup>2</sup></span> </div>
-
+                        <div class="flex"><pre>Area is: </pre><span id="ellipsSpan" >0</span><pre> cm<sup>2</sup></pre> </div>
 
 
                       <div class="card-actions ">
-                        <button class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
+                        <button onclick="ellipsArea()" class="btn btn-wide font-semibold text-lg bg-sky-400">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -238,6 +234,11 @@
 
 
     <script src="JS/triangle-area.js"></script>
+    <script src="JS/rectangle-area.js"></script>
+    <script src="JS/para-area.js"></script>
+    <script src="JS/rhombus-area.js"></script>
+    <script src="JS/pentagon-area.js"></script>
+    <script src="JS/ellips-area.js"></script>
 
 
 
