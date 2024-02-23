@@ -7,4 +7,7 @@ const actors ={
 
 const {phone,age}= actors
 console.log(phone);
-console.log(age)
+console.log(age);
+
+
+
