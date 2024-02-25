@@ -51,6 +51,6 @@ const user2 = {
   },
 };
 
-console.log(user.address.street?.third)
+console.log(user.address?.street?.third);
 
-console.log(user2.address.street?.third)
+console.log(user2.address.street?.third);
