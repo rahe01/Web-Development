@@ -34,6 +34,9 @@ const aiHubdisplay = (allData) => {
 
 
 </div>
+
+<button class="btn rounded-full mb-2 max-w-screen-sm" onclick="my_modal_5.showModal()">Show Details</button>
+
         
         
         `;
