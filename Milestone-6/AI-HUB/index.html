@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5b9ee7a767.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="container mx-auto">
+
+
+
+
+    <header class="flex flex-col items-center gap-5">
+        <h1 class="text-5xl pt-10 font-semibold  text-center">AI Universe Hub</h1>
+        <div><button class="btn btn-error text-center text-white">Short By Date</button></div>
+    </header>
+
+
+    <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom">
+  <div class="modal-box w-11/12">
+
+<div class="flex justify-around ">
+    <div>
+
+        <!-- left side -->
+        <div class="bg-[#EB57570D] p-5 rounded-lg border-2 border-red-600">
+            <h1 class="text-xl font-semibold">ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT technology to simulate human conversation.</h1>
+            <div class="flex justify-around mt-5 mb-5 ">
+                <div class="text-lg bg-white text-green-500 font-bold rounded-lg p-5 text-center"><p>$10/ <br> month <br>
+                    Basic</p></div>
+                <div class="text-lg bg-white text-orange-600 font-bold rounded-lg p-5 text-center"><p>$50/ <br> month <br>
+                    Pro</p></div>
+                <div class="text-lg bg-white text-pink-400 font-bold rounded-lg p-5 text-center"><p>Contact <br> 
+                    us <br>
+                    Enterprise</p></div>
+            </div>
+        
+        
+        
+        
+            <div class="flex justify-around ">
+        
+                <div>
+                    <h2 class="card-title">Featurs</h2>
+           
+            <ol class="list-disc">
+                <li>${ai.features[0]}</li>
+                <li>${ai.features[1]}</li>
+                <li>${ai.features[2]}</li>
+            </ol>
+                </div>
+        
+                <div>
+                    <h2 class="card-title">Integrations</h2>
+           
+            <ol class="list-disc">
+                <li>${ai.features[0]}</li>
+                <li>${ai.features[1]}</li>
+                <li>${ai.features[2]}</li>
+            </ol>
+                </div>
+        
+        
+        
+            </div>
+        </div>
+        
+        
+        <!-- right side -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        
+        <div>
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                 
+                </div>
+              </div>
+            
+        </div>
+        
+</div>
+   
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+    <main>
+
+
+        <!-- Card section -->
+        <section>
+            <div id="ai-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
