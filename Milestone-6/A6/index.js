@@ -1,5 +1,6 @@
 const btnContainer = document.getElementById("btn-container");
-const cardContainer = document.querySelector(".card-container"); // Corrected the class name
+const cardContainer = document.querySelector(".card-container");
+let selectedCatagory = 1000; // Corrected the class name
 
 const fetchCategories = () => {
   const url = "https://openapi.programming-hero.com/api/videos/categories";
@@ -22,7 +23,8 @@ const fetchCategories = () => {
     });
 };
 
-const fetchdataBycategory = (categoryID) => { // Corrected the function parameter name
+const fetchdataBycategory = (categoryID) => { 
+  selectedCatagory = categoryID;// Corrected the function parameter name
   const url = `https://openapi.programming-hero.com/api/videos/category/${categoryID}`;
   fetch(url)
     .then((res) => res.json())
@@ -33,13 +35,11 @@ const fetchdataBycategory = (categoryID) => { // Corrected the function paramete
         const newCard = document.createElement("div");
         newCard.innerHTML = `
           <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="${video.thumbnail_url}" alt="${video.title}" /></figure>
+            <figure><img src="${video.thumbnail}" alt="${video.title}" /></figure>
             <div class="card-body">
               <h2 class="card-title">${video.title}</h2>
               <p>${video.description}</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
+              
             </div>
           </div>
         `;
