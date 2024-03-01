@@ -31,6 +31,7 @@ const fetchdataBycategory = (categoryID) => {
     .then(({ data }) => {
       cardContainer.innerHTML = '';
       data.forEach((video) => {
+        console.log(video);
         
         const newCard = document.createElement("div");
         newCard.innerHTML = `
@@ -38,7 +39,7 @@ const fetchdataBycategory = (categoryID) => {
             <figure><img src="${video.thumbnail}" alt="${video.title}" /></figure>
             <div class="card-body">
               <h2 class="card-title">${video.title}</h2>
-              <p>${video.description}</p>
+              <p>${video.image}</p>
               
             </div>
           </div>
