@@ -4,6 +4,9 @@ import './App.css'
 
 import Counter from './Counter'
 import Team from './Team'
+import Users from './Users';
+
+import { Friend }  from './Friend';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +27,10 @@ function App() {
     <>
      
       <h3>React core concept 2</h3>
+
+      <Friend></Friend>
+
+      <Users></Users>
 
       <Team></Team>
 
