@@ -4,3 +4,11 @@
     padding: 15px;
     border-radius: 15px;
 }
+
+.visited{
+    background-color: rgb(33, 29, 36);
+}
+
+.going {
+    background-color: green;
+}
