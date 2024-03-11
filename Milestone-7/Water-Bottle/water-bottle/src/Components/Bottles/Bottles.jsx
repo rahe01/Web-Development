@@ -3,6 +3,7 @@ import Bottle from "./../Bottle/Bottle";
 
 import "./Bottles.css";
 import { addToLS, getStoredCart } from "../../utilites/localStorage";
+import Cart from './../Cart/Cart';
 
 const Bottles = () => {
   const [bottles, setBottles] = useState([]);
@@ -41,6 +42,8 @@ if(bottles.length > 0){
 
     console.log(saveCart)
 
+    setCart(saveCart)
+
 
 }
 
@@ -64,7 +67,7 @@ if(bottles.length > 0){
   return (
     <div>
       <h3>Bottles Here {bottles.length}</h3>
-      <h4>Cart : {cart.length}</h4>
+      <Cart cart={cart}></Cart>
 
       <div className="bottle-container">
         {bottles.map((bottle) => (
