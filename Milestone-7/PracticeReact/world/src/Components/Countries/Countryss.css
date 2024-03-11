@@ -1,0 +1,7 @@
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,113,1) 23%, rgba(57,117,189,1) 64%, rgba(32,155,209,1) 84%, rgba(14,188,239,1) 91%, rgba(0,212,255,1) 100%);
+
+    border-radius: 10px;
+}
