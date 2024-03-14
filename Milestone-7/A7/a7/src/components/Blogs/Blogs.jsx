@@ -15,12 +15,12 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div >
+    <div className="md:w-2/3"  >
 
       
 
 
-   <div className="max-w-6xl m-auto">
+   <div  >
    {
         blogs.map((blog ,idx) => <Blog key={idx} blog={blog}></Blog>)
     }

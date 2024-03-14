@@ -6,7 +6,7 @@ const Blog = ({blog}) => {
 
 
     return (
-        <div className="w-2/3 bg-slate-400 rounded-lg mb-5 mt-5 space-y-3 ">
+        <div className=" bg-slate-400 rounded-lg mb-5 mt-5 space-y-3 ">
            <img src={cover} className="w-full rounded-t-lg" alt="" />
 
 
