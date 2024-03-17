@@ -1,18 +1,21 @@
 
 import './App.css'
-import Countries from './Components/Countries/Countries'
+import Registation from './Components/Registation/Registation'
+
 
 function App() {
   
 
   return (
-    <>
-     <h1>React World Tour</h1>
+    <div className='container m-auto'>
+
+
+     <Registation></Registation>
   
-    <Countries></Countries>
+    
 
 
-    </>
+    </div>
   )
 }
 
