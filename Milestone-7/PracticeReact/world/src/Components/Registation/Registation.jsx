@@ -11,9 +11,9 @@ const Registation = () => {
   // const user = {name: name, email: email, password: password}
   // console.log(user);
 
-  function clearModal() {
-    setIsSubmitted(false);
-  }
+  // function clearModal() {
+  //   setIsSubmitted(false);
+  // }
 
   const handleSubmit = (e) => {
    
@@ -82,7 +82,7 @@ e.preventDefault();
               <input
               onChange={(event) => setIsClicked(event.target.checked)}
                 type="checkbox"
-                defaultChecked
+                
                 className="checkbox checkbox-info"
               />
             </label>
@@ -106,7 +106,7 @@ e.preventDefault();
               <p> Password : {password}</p>
 
 
-              <button className="btn" onClick={clearModal}>Clear</button>
+              <button className="btn" onClick={() => window.location.reload()}>Clear</button>
             </div>
             
           </div>
