@@ -7,7 +7,6 @@ const Registation = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
 
-
   // const user = {name: name, email: email, password: password}
   // console.log(user);
 
@@ -16,11 +15,10 @@ const Registation = () => {
   // }
 
   const handleSubmit = (e) => {
-   
-e.preventDefault();
-    if(!isClicked){
-        alert('please elick the check boox')
-        return
+    e.preventDefault();
+    if (!isClicked) {
+      alert("please elick the check boox");
+      return;
     }
 
     console.log(name);
@@ -76,22 +74,19 @@ e.preventDefault();
             />
           </label>
 
-     <div className="flex justify-between mt-4">
-     <div className="form-control">
-            <label className="cursor-pointer label">
-              <input
-              onChange={(event) => setIsClicked(event.target.checked)}
-                type="checkbox"
-                
-                className="checkbox checkbox-info"
-              />
-            </label>
+          <div className="flex justify-between mt-4">
+            <div className="form-control">
+              <label className="cursor-pointer label">
+                <input
+                  onChange={(event) => setIsClicked(event.target.checked)}
+                  type="checkbox"
+                  className="checkbox checkbox-info"
+                />
+              </label>
+            </div>
+
+            <button className="btn btn-ghost float-right ">Submit</button>
           </div>
-
-          <button className="btn btn-ghost float-right ">Submit</button>
-     </div>
-
-
         </form>
 
         {isSubmitted && (
@@ -105,10 +100,10 @@ e.preventDefault();
               <p> Email : {email}</p>
               <p> Password : {password}</p>
 
-
-              <button className="btn" onClick={() => window.location.reload()}>Clear</button>
+              <button className="btn" onClick={() => window.location.reload()}>
+                Clear
+              </button>
             </div>
-            
           </div>
         )}
       </div>
