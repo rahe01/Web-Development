@@ -7,6 +7,10 @@ const Registation = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
 
+
+
+  
+
   // const user = {name: name, email: email, password: password}
   // console.log(user);
 
