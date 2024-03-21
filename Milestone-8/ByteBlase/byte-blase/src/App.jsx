@@ -1,12 +1,17 @@
 
-import './App.css'
+
+import Blogs from './Pages/Blogs'
+import BookMarks from './Pages/BookMarks'
+import Home from './Pages/Home'
 
 function App() {
   
 
   return (
     <>
-     <h1 className='text-3xl'>Hello</h1>
+    <Home></Home>
+   <Blogs></Blogs>
+   <BookMarks></BookMarks>
     </>
   )
 }
