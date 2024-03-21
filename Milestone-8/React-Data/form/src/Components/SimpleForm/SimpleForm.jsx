@@ -7,6 +7,7 @@ const SimpleForm = () => {
         console.log(e.target.name.value)
         console.log(e.target.email.value)
         console.log('submit')
+        console.log(e.target.number.value)
     }
 
 
@@ -16,8 +17,11 @@ const SimpleForm = () => {
             <form onSubmit={handleSubmit} >
 
                 <input type="text" name="name" />
+                <br />
                 <input type="email" name="email" id="" />
                 <br />
+
+                <input type="password" name="password" id="" />
                 <input type="submit" value="Submit" />
 
 
