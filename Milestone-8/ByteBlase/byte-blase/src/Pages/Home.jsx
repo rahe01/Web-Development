@@ -1,14 +1,12 @@
-import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
 
 
 const Home = () => {
     return (
-        <div>
-            <div className="h-16">
-            <Navbar></Navbar>
-            </div>
+        <div className="flex flex-col justify-center items-center min-h-[calc(100vh-116px)]">
            
-            <h1>Home page</h1>
+           
+            <Hero></Hero>
         </div>
     );
 };
