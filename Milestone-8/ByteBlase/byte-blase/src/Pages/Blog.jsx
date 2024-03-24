@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { Link, Outlet, useLoaderData, useNavigation } from "react-router-dom";
+import Loader from "../Components/Loader";
 
 const Blog = () => {
   const [tabIndex, setTabIndex] = useState(0);
+  const navigation = useNavigation()
   const blog = useLoaderData();
   const {
     title,
@@ -11,6 +13,8 @@ const Blog = () => {
     reading_time_minutes,
     public_reactions_count,
   } = blog;
+
+  if(navigation.state === "loading") return <Loader></Loader>
   return (
     <div className="max-w-3xl px-6 py-16 mx-auto space-y-12">
       <article className="space-y-8 dark:bg-gray-100 dark:text-gray-900">
