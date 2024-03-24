@@ -1,49 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './Pages/Home.jsx';
-import Blogs from './Pages/Blogs.jsx';
-import BookMarks from './Pages/BookMarks';
-import MainLayout from './LayOuts/MainLayout.jsx';
-import Blog from './Pages/Blog.jsx';
-
-const router =  createBrowserRouter([
-  {
-    path : '/',
-    element : <MainLayout></MainLayout>,
-    children: [
-
-      {
-        index : true,
-        element : <Home></Home>,
-      
-
-      },
-      {
-        path : '/blogs',
-        loader : () => fetch('https://dev.to/api/articles?per_page=20&top=7') ,
-        element : <Blogs></Blogs>
-      },
-      {
-        path : '/blog/:id',
-        element : <Blog></Blog>,
-        loader : ({params}) => fetch(`https://dev.to/api/articles/${params.id}`)
-      },
-      {
-        path : '/bookmarks',
-        element : <BookMarks></BookMarks>
-      },
-    ]
-  },
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes/Routes'
 
 
 
-]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
