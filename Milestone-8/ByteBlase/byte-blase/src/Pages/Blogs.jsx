@@ -23,19 +23,16 @@ const Blogs = () => {
               {blogs[0].title}
             </h3>
             <span className="text-xs text-gray-400 dark:text-gray-600">
-             {new Date(blogs[0].published_at).toLocaleDateString()}
+              {new Date(blogs[0].published_at).toLocaleDateString()}
             </span>
             <p>{blogs[0].description}</p>
           </div>
         </a>
         <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        
-        {
-            blogs.map(blog => <BlogCard key={blog.id} blog={blog}></BlogCard>)
-        }
-        
+          {blogs.map((blog) => (
+            <BlogCard key={blog.id} blog={blog}></BlogCard>
+          ))}
         </div>
-        
       </div>
     </section>
   );
