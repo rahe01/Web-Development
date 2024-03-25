@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, Outlet, useLoaderData, useNavigation } from "react-router-dom";
 import Loader from "../Components/Loader";
+import { IoIosApps } from "react-icons/io";
+import { saveBlogs } from "../Utils";
 
 const Blog = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -15,6 +17,14 @@ const Blog = () => {
   } = blog;
 
   if(navigation.state === "loading") return <Loader></Loader>
+
+
+  const handleBookMark = (blog) =>{
+    console.log(blog)
+    saveBlogs(blog)
+  }
+
+
   return (
     <div className="max-w-3xl px-6 py-16 mx-auto space-y-12">
       <article className="space-y-8 dark:bg-gray-100 dark:text-gray-900">
@@ -78,6 +88,9 @@ const Blog = () => {
               </svg>
               <span>Author</span>
             </Link>
+            <div onClick={()=> handleBookMark(blog)} className="bg-primary p-3 ml-5 rounded-full bg-opacity-20 hover:bg-opacity-30 cursor-pointer hover:scale-105 overflow-hidden">
+            <IoIosApps size={20} className="text-secondary" />
+            </div>
           </div>
         </div>
 
