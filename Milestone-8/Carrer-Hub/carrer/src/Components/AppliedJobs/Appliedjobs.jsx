@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../Utility/localstorage";
+import { Helmet } from 'react-helmet-async';
 
 
 const Appliedjobs = () => {
@@ -21,6 +22,8 @@ const Appliedjobs = () => {
 
     return (
         <div>
+            <Helmet><title>
+                Appid</title></Helmet>
             <h1>jobssssssss</h1>
         </div>
     );

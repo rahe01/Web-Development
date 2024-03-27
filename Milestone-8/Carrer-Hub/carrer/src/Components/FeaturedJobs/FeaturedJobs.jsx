@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Job from "../Job/Job";
 
+
 const FeaturedJobs = () => {
 
 
@@ -24,6 +25,7 @@ const FeaturedJobs = () => {
 
     return (
         <div>
+           
             <div className="text-center">
                 <h2 className="text-5xl">Featured jobs {jobs.length}</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat ut ipsum perferendis esse molestias qui, est, maxime possimus quaerat inventore quo soluta quibusdam quia quam nostrum ipsam? Suscipit, fugit!</p>
