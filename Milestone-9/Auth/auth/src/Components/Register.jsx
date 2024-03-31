@@ -1,12 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/Authprovider";
 
 
 const Register = () => {
+  const navigate = useNavigate()
 
-  const {createUser} = useContext(AuthContext)
-  
+  const {createUser , singInWithgoogle} = useContext(AuthContext)
+   
 
     const handleRegister = e =>{
         e.preventDefault()
@@ -25,6 +26,17 @@ const Register = () => {
  
         })
         
+    }
+
+    const handleGoogle =() =>{
+      singInWithgoogle()
+      .then(result =>{
+        console.log(result.user)
+        navigate('/')
+      })
+      .catch(error =>{
+        console.log(error)
+      })
     }
 
     return (
@@ -83,6 +95,7 @@ const Register = () => {
             </form>
   
             <p>Already here? Please <Link to={'/login'}><button className="btn btn-link">Login</button></Link> </p>
+            <p><button className="btn btn-ghost" onClick={handleGoogle}>Google</button></p>
           </div>
         </div>
       </div>
