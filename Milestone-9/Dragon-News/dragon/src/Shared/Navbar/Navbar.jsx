@@ -30,6 +30,9 @@ const Navbar = () => {
       <li>
         <NavLink to={"/carrer"}>Carrer</NavLink>
       </li>
+      <li>
+        <NavLink to={"/login"}>Login</NavLink>
+      </li>
     </>
   );
 
