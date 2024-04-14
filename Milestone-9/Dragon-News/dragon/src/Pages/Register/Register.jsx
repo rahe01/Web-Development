@@ -34,6 +34,8 @@ const Register = () => {
 
 
       };
+
+      console.log
     return (
         <div>
       <Navbar></Navbar>
