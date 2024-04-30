@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
-// import img from '../../assets/images/login/login.svg'
+import img from '../../assets/images/login/login.svg'
 import { useContext } from 'react';
-import { AuthContext } from '../../Provider/AuthProvider';
-
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Login = () => {
 
@@ -26,7 +25,7 @@ const Login = () => {
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="w-1/2 mr-12">
-                    <img src= "login.svg" alt="" />
+                    <img src={img} alt="" />
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <div className="card-body">
