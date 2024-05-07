@@ -65,13 +65,18 @@ async function run() {
       res
         .cookie("access-token", token, {
           httpOnly: true,
-          secure: false,
+          secure: true,
           sameSite: "none",
           maxAge: 1000 * 60 * 60,
           path: "/",
         })
         .send({ success: true });
     });
+
+    app.post('/logout' , async (req, res) => {
+      const user = req.body;
+      res.clearCookie('access-token' ,{maxAge:0}).send({ success: true });
+    })
 
     // services collection
     app.get("/services", async (req, res) => {

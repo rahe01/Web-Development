@@ -3,6 +3,8 @@ import { AuthContext } from "../../providers/AuthProvider";
 import BookingRow from "./BookingRow";
 import axios from "axios";
 
+
+
 const Bookings = () => {
     const { user } = useContext(AuthContext);
     const [bookings, setBookings] = useState([]);
