@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Dashlayout({children}) {
+export default function loading() {
   return (
     <div>
-      
+      dash loading
     </div>
   )
 }

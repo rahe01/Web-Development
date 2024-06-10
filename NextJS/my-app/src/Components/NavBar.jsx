@@ -12,6 +12,16 @@ export default function NavBar() {
         console.log("login")
         router.push('/services')
     }
+
+    if(pathName.includes('/dashboard')){
+        return (
+         <div className='bg-orange-400'>dash lay</div>
+        )
+      
+      }
+
+
+
   return (
     <div>
       <nav className='bg-green-500 flex '>
@@ -19,6 +29,8 @@ export default function NavBar() {
             <li><Link className={pathName === '/About' ? 'text-white' : 'text-black'} href={'/About'}> About </Link></li>
             <li  > <Link className={pathName === '/services' ? 'text-white' : 'text-black'} href={'/services'}> Services</Link></li>
             <li ><Link className={pathName === '/blogs' ? 'text-white' : 'text-black'} href={'/blogs'}> Blogs</Link></li>
+            <li ><Link className={pathName === '/catagories' ? 'text-white' : 'text-black'} href={'/catagories'}> Catagories</Link></li>
+            <li ><Link className={pathName === '/dashboard' ? 'text-white' : 'text-black'} href={'/dashboard'}> Dash</Link></li>
         </ul>
         <button onClick={handler} className='bg-white px-4 py-2'>Login</button>
       </nav>
